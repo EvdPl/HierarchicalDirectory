@@ -25,8 +25,8 @@
 hierarchical_directory/
 ├── app/
 │   ├── __init__.py
-│   ├── main.py              # Основное приложение FastAPI
-│   ├── database.py          # Настройки базы данных
+│   ├── main.py             # Основное приложение FastAPI
+│   ├── database.py         # Настройки базы данных
 │   ├── models.py           # SQLAlchemy модели
 │   ├── schemas.py          # Pydantic схемы
 │   ├── crud.py             # CRUD операции
@@ -40,10 +40,10 @@ hierarchical_directory/
 ├── Dockerfile              # Конфигурация Docker
 ├── docker-compose.yml      # Docker Compose конфигурация
 ├── requirements.txt        # Зависимости Python
-├── init.sql               # Инициализация БД
-├── .env                   # Переменные окружения
+├── init.sql                # Инициализация БД
+├── .env                    # Переменные окружения
 └── logs/
-    └── app.log            # Логи приложения
+    └── app.log             # Логи приложения
 ```
 
 ## 🚀 Быстрый старт
