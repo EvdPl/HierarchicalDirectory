@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<directory>
+    <item code="001" name="Страны">
+        <item code="001.001" name="Россия">
+            <item code="001.001.001" name="Москва"/>
+            <item code="001.001.002" name="Санкт-Петербург"/>
+            <item code="001.001.003" name="Новосибирск"/>
+        </item>
+        <item code="001.002" name="США">
+            <item code="001.002.001" name="Нью-Йорк"/>
+            <item code="001.002.002" name="Лос-Анджелес"/>
+            <item code="001.002.003" name="Чикаго"/>
+        </item>
+        <item code="001.003" name="Германия">
+            <item code="001.003.001" name="Берлин"/>
+            <item code="001.003.002" name="Мюнхен"/>
+            <item code="001.003.003" name="Гамбург"/>
+        </item>
+    </item>
+    
+    <item code="002" name="Категории товаров">
+        <item code="002.001" name="Электроника">
+            <item code="002.001.001" name="Смартфоны"/>
+            <item code="002.001.002" name="Ноутбуки"/>
+            <item code="002.001.003" name="Телевизоры"/>
+        </item>
+        <item code="002.002" name="Одежда">
+            <item code="002.002.001" name="Мужская"/>
+            <item code="002.002.002" name="Женская"/>
+            <item code="002.002.003" name="Детская"/>
+        </item>
+    </item>
+    
+    <item code="003" name="Организации">
+        <item code="003.001" name="Департаменты">
+            <item code="003.001.001" name="ИТ отдел"/>
+            <item code="003.001.002" name="Бухгалтерия"/>
+            <item code="003.001.003" name="Отдел кадров"/>
+        </item>
+        <item code="003.002" name="Филиалы">
+            <item code="003.002.001" name="Центральный офис"/>
+            <item code="003.002.002" name="Северный филиал"/>
+            <item code="003.002.003" name="Южный филиал"/>
+        </item>
+    </item>
+</directory>

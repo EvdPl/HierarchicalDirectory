@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Иерархический справочник</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📁</text></svg>"
+        type="image/svg+xml">
+</head>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Иерархический справочник</h1>
+
+        <div class="tabs">
+            <button class="tab-btn active" onclick="openTab('view')">Просмотр</button>
+            <button class="tab-btn" onclick="openTab('search')">Поиск</button>
+            <button class="tab-btn" onclick="openTab('add')">Добавить</button>
+            <button class="tab-btn" onclick="openTab('import')">Импорт</button>
+        </div>
+
+        <div id="view" class="tab-content active">
+            <h2>Дерево справочника</h2>
+            <div class="tree-controls">
+                <button onclick="expandAll()">Развернуть все</button>
+                <button onclick="collapseAll()">Свернуть все</button>
+            </div>
+            <div id="directory-tree"></div>
+        </div>
+
+        <div id="search" class="tab-content">
+            <h2>Поиск по справочнику</h2>
+            <div class="search-form">
+                <input type="text" id="search-code" placeholder="Код или часть кода">
+                <input type="text" id="search-name" placeholder="Название или часть названия">
+                <button onclick="searchItems()">Поиск</button>
+            </div>
+            <div id="search-results"></div>
+        </div>
+
+        <div id="add" class="tab-content">
+            <h2>Добавить/Редактировать элемент</h2>
+            <form id="item-form">
+                <input type="hidden" id="item-id">
+                <div class="form-group">
+                    <label>Код:</label>
+                    <input type="text" id="item-code" required>
+                </div>
+                <div class="form-group">
+                    <label>Название:</label>
+                    <input type="text" id="item-name" required>
+                </div>
+                <div class="form-group">
+                    <label>Родительский код (опционально):</label>
+                    <input type="text" id="item-parent">
+                </div>
+                <button type="submit">Сохранить</button>
+                <button type="button" onclick="resetForm()">Сброс</button>
+            </form>
+        </div>
+
+        <div id="import" class="tab-content">
+            <h2>Импорт из XML: все данные текущего справочника будут удалены.</h2>
+            <input type="file" id="xml-file" accept=".xml">
+            <button onclick="importXML()">Импортировать</button>
+            <div id="import-result"></div>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+    <div id="confirmModal" class="modal">
+        <div class="modal-content">
+            <h3>Подтверждение удаления</h3>
+            <p>Вы уверены, что хотите удалить этот элемент?</p>
+            <div class="modal-buttons">
+                <button id="confirmDelete" class="btn-danger">Удалить</button>
+                <button id="cancelDelete" class="btn-secondary">Отмена</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="notification" class="notification">
+        <span id="notificationText"></span>
+        <button onclick="hideNotification()">×</button>
+    </div>
+</body>
+
+</html>
