@@ -16,7 +16,6 @@
 - **Backend**: Python 3.11+, FastAPI, SQLAlchemy
 - **Database**: MySQL
 - **Frontend**: HTML, CSS, JavaScript 
-- **MySQL**: реляционная база данных
 - **Containerization**: Docker, Docker Compose
 - **XML Processing**: lxml
 
