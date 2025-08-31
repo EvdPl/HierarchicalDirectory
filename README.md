@@ -64,7 +64,6 @@ cp .env.example .env
 **3. Запустите приложение с помощью Docker Compose:**
 ```bash
 docker-compose up --build -d
-# Отредактируйте .env при необходимости
 ```
 **4. Откройте в браузере: http://localhost:8000**
 
