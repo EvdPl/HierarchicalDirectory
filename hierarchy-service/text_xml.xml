@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<directory>
+    <item>
+        <code>001</code>
+        <name>Главный раздел</name>
+        <parent_code></parent_code>
+    </item>
+    <item>
+        <code>001.001</code>
+        <name>Подраздел 1</name>
+        <parent_code>001</parent_code>
+    </item>
+    <item>
+        <code>001.002</code>
+        <name>Подраздел 2</name>
+        <parent_code>001</parent_code>
+    </item>
+    <item>
+        <code>001.001.001</code>
+        <name>Элемент 1.1</name>
+        <parent_code>001.001</parent_code>
+    </item>
+</directory>
